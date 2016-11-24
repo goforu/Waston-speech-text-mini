@@ -16,8 +16,8 @@ function runAuth(type){
             config = {
                 version:'v1',
                 url: 'https://stream.watsonplatform.net/speech-to-text/api',
-                username: process.env.STT_USERNAME || '1f44b96e-c14f-4d07-b236-31cb7e4f3b82',
-                password: process.env.STT_PASSWORD || 'yUtDhZV75ncY'
+                username: process.env.STT_USERNAME || '<username1>',
+                password: process.env.STT_PASSWORD || '<password1>'
             };
             auth(config, 'speech_to_text');
             break;
@@ -26,8 +26,8 @@ function runAuth(type){
             config = {
                 version:'v1',
                 url: 'https://stream.watsonplatform.net/text-to-speech/api',
-                username: process.env.STT_USERNAME || '71656062-f1af-47f2-ab80-e1ba6e8b8165',
-                password: process.env.STT_PASSWORD || 'Dz34a0UpB4WZ'
+                username: process.env.STT_USERNAME || '<username2>',
+                password: process.env.STT_PASSWORD || '<password2>'
             };
             auth(config, 'text_to_speech');
             break
